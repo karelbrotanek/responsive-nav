@@ -2,7 +2,7 @@
 li {
     list-style: none;
     display: inline;
-    margin: 30px;
+    padding: 30px;
     font-family: Calibri;
     font-size: 15px;
 }
@@ -21,6 +21,7 @@ nav {
 ul .burger-ul{
     margin: 0px;
     padding: 0px;
+    top: 50px;
 }
 body {
     background-color: lightskyblue;
@@ -28,10 +29,13 @@ body {
 
 .nav-hamburger {
     display: none;
+    top: 50px;
 }
 
 .nav-hamburger-div {
     display: none;
+    position: absolute;
+    top: 50px;
 }
 
 .hav_navigation {
@@ -53,7 +57,8 @@ body {
     list-style-type: none;
     background-color: white;
     position: absolute;
-    top: 55px;
+    left: -60px;
+    top: 39px;
     box-shadow: 3px 7px grey;
 }
 .hav-menu{
@@ -61,6 +66,9 @@ body {
     list-style: none;
     margin: 0px;
     padding: 0px;
+}
+li:hover{
+    background-color: dodgerblue;
 }
 li:hover .hav-navigace{
     display: block;
@@ -87,7 +95,6 @@ li a{
     margin-left: -50px;
 }
 
-@media screen and (max-width: 600px) {
     nav {
         text-align: left;
         background-color: white;
@@ -105,14 +112,23 @@ li a{
         list-style-type: none;
         display: block;
     }
-    .li-menu{
-        display: none;
-    }
-    .zakladni-nav{
-        display: none;
-    }
+
     .hav-menu li {
         display: block;
     }
+.horni{
+    width: 100.25%;
+    height: 55px;
+    background-color: black;
+    left: -5px;
+    position: absolute;
+    z-index: -1;
+    top: -5px;
+}
+li.li-hamburger{
+    width: 0px;
+    padding: 0px;
+    position: absolute;
+    left: 50px;
 }
 
